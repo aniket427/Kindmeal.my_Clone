@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./navbar.css"> -->
-    <link rel="stylesheet" href="./kindmoment.css">
-    
-    <script src="https://kit.fontawesome.com/39dce68ee5.js" crossorigin="anonymous"></script>
-
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1176b352c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/kindmoment.css">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <title>Reciepe Details</title>
 </head>
-
 <style>
 
 #items{
@@ -19,12 +19,8 @@
  grid-template-columns: repeat(2,1fr);
  grid-template-rows: auto;
  width: 70%;
- 
  margin: auto;
  margin-top: -151px;
-    
-    
-
 }
 #items>div{
     margin: 1px 51px;
@@ -44,10 +40,6 @@
         display: flex;
         justify-content: space-between;
         padding: 1px 7px;
-    }
-    .foote{
-
-
     }
     #bts{
 
@@ -80,37 +72,22 @@
 </style>
 
 <body>
-    <nav id="navbar">
-      
-    </nav>
+    <nav id="navbar"></nav>
     
-    
+    <div id="category"></div>
 
-
-
-    <div id="category">
-     
-    </div>
-
-<div id="img">
-    
-
-</div>
+<div id="img"></div>
 
 <div id="items">
 
  
 
-    <div id="contents">
-     
-      
+    <div id="contents"></div>
 
-    </div>
     <div id="sidecontent">
     
-<center><h3 id="extra">More KindMoments</h3>
-
-
+<center>
+    <h3 id="extra">More KindMoments</h3>
 </center>
 
 
@@ -120,35 +97,20 @@
  <img style="height:200px;width:300px" src="https://www.kindmeal.my/photos/moment/23/23998-45678-m.jpg" alt="">
  <img style="height:200px;width:300px" src="https://www.kindmeal.my/photos/moment/23/23998-45677-m.jpg" alt="">
 
-
- 
-    </div>
-    
-    
 </div>
-<button id="bts"> <i style="background-color: red;" class="fas fa-angle-left"></i>Return To Profile  </button>
+</div>
+
+<button id="bts"> 
+    <i style="background-color: red;" class="fas fa-angle-left"></i>Return To Profile</button>
 
 <br>
 <br>
     
     
-    <div id="footer">
-
-
-    </div>
-  
+    <div id="footer"></div>
+    <script src="./scripts/part.js"> </script> 
+    
+<script type="module" src="./scripts/part1.js">
+</script>
 </body>
 </html>
-
-
-
-<script type="module" src="part.js"> 
-
-
-
-
-</script> 
-<script src="part1.js">
-
-
-</script>

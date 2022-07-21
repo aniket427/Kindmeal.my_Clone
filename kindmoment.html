@@ -1,44 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="./kindmoment.css">
-  
-
-  <script src="https://kit.fontawesome.com/39dce68ee5.js" crossorigin="anonymous"></script>
-  <title>Document</title>
-
+  <title>kind Moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1176b352c6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./styles/kindmoment.css">
+  <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
 </head>
-
-
-
-<style>
- #select{
-  overflow: scroll;
-  /* height: 500px; */
- }
-
-</style>
-
 <body>
-  <nav id="navbar">
 
+  <!-- Navbar Attachment(Import) -->
+  <nav id="navbar"></nav>
 
-  </nav>
-  <div id="category">
-   
-
-
-  </div>
-
-
-
-
-
+  <!-- Some Category wise selection Dishes -->
+  <div id="category"></div>
 
   <div id="detail">
 
@@ -72,15 +52,13 @@
 
 
 <div id="opt">
-
-
   <div>
     <div>Moments</div>
     <div><a id="deals" href="deal.html">Deal Reviews</a></div>
     <div>Following</div>
   </div>
   <div>
-    <div><input type="text" placeholder="Search User or Shop" id="input"></div>
+    <div><input type="text" placeholder="Search User" id="input"></div>
     <div><select name="" id="select">
       <option value="">All Locations</option>
       <option value="">Klang Valley
@@ -105,18 +83,10 @@
     
   </select>
 </div>
-    <div><button id="btn">Search</button></div>
+    <div><button id="btn" onclick="main()">Search</button></div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-    
+  
   <div id="page">
     <div>Page:</div>
     <div>1</div>
@@ -128,24 +98,20 @@
     <div>7</div>
     <div>8</div>
     <div>9</div>
-
-
   </div>
 
-  <div id="container">
+  <div id="containerr"></div>
 
-
-
-  </div>
   <br>
-
-
-<div style="   cursor:pointer;box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;width:1200px;margin:auto">  <img src="https://www.kindmeal.my/images/banner_recipe.jpg" alt="">
+<div 
+style= "cursor:pointer;box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;width:1200px;margin:auto">  
+<img src="https://www.kindmeal.my/images/banner_recipe.jpg" alt="Banner">
 </div>  
 
 
     
-  <div id="page">
+  <div id="page1">
+
     <div>Page:</div>
     <div>1</div>
     <div>2</div>
@@ -156,20 +122,12 @@
     <div>7</div>
     <div>8</div>
     <div>9</div>
+   </div>
 
-
-  </div>
-
-
-  <footer id="footer">
-  </footer>
+  <footer id="footer"></footer>
+  <script src="./scripts/kindmomentdata.js"></script>
+ 
 </body>
-
 </html>
-
-
-<script src="kindmomentdata.js">
-    
-
-  
+<script type="module" src="./scripts/kind1.js">
 </script>
