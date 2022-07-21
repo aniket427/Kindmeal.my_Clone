@@ -1,3 +1,9 @@
+
+import { navbar, footer } from "../components/navbar.js"
+
+document.querySelector("#navbar").innerHTML=navbar();
+document.querySelector("#footer").innerHTML=footer();
+
 let arr =[` <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title></title>
