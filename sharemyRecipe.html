@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/helpless-nation-9785/styles/navbar.css">
+        <link rel="stylesheet" href="/helpless-nation-9785/styles/sharemyRecipe.css">
+    </head>
+    <style>
+    </style>
+    <body>
+         <div id="navbar"></div>
+
+       <div id="parentbox">
+        <div id="leftbox">
+            <div>
+                <h3>Member Functions</h3>
+                <p><a href="https://www.kindmeal.my/member/index.php?action=coupons"></a>Manage My Coupons</p>
+                <p><a href="https://www.kindmeal.my/member/index.php?action=recipe"></a> Manage My Recipes</p>
+                <p><a href="https://www.kindmeal.my/vik3797"></a> My KindMeal Profile</p>
+                <p><a href="https://www.kindmeal.my/member/index.php?action=settings"></a> Update Profile</p>
+                <p><a href="https://www.kindmeal.my/member/index.php?action=settings"></a> Account Settings</p>
+                <p><a href="https://www.kindmeal.my/logout.php"></a> Logout</p>
+            </div>
+        </div>
+        <div id="form">
+            <h1>Create New Recipe</h1>
+            <p>Share delicious recipes with food lovers to encourage creative meat-free dining. Please include sufficient details and directions so food lovers can accurately reproduce your masterpiece.</p>
+            <h4 ><a style="color: rgb(10, 172, 236);" href="https://www.kindmeal.my/member/index.php?action=recipe">< Return To My Recipes</a></h4>
+            <h2>Recipe Details</h2>
+            <table id="table">
+                <tr class="tr">
+                    <td style="color:gray;">
+                        Recipe Name 
+                    </td>
+                    <td>
+                        <input id="name" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Primary Category</td>
+                    <td>
+                        <select name="" id="p_selector">
+                            <option value="Select Category">Select Category</option>
+                            <option value="Appetizers">Appetizers</option>
+                            <option value="Beverages">Beverages</option>
+                            <option value="Breads">Breads</option>
+                            <option value="Breakfast and Brunch">Breakfast and Brunch</option>
+                            <option value="Cocktails">Cocktails</option>
+                            <option value="Condiments and Sauces">Condiments and Sauces</option>
+                            <option value="Desserts">Desserts</option>
+                            <option value="Lunch and Snacks">Lunch and Snacks</option>
+                            <option value="Main Dishes">Main Dishes</option>
+                            <option value="Salads">Salads</option>
+                            <option value="Side Dishes">Side Dishes</option>
+                            <option value="Soups">Soups</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Secondary Category (Optional)</td>
+                    <td>
+                        <select name="" id="s_selector">
+                            <option value="Select Category">Select Category</option>
+                            <option value="Appetizers">Appetizers</option>
+                            <option value="Beverages">Beverages</option>
+                            <option value="Breads">Breads</option>
+                            <option value="Breakfast and Brunch">Breakfast and Brunch</option>
+                            <option value="Cocktails">Cocktails</option>
+                            <option value="Condiments and Sauces">Condiments and Sauces</option>
+                            <option value="Desserts">Desserts</option>
+                            <option value="Lunch and Snacks">Lunch and Snacks</option>
+                            <option value="Main Dishes">Main Dishes</option>
+                            <option value="Salads">Salads</option>
+                            <option value="Side Dishes">Side Dishes</option>
+                            <option value="Soups">Soups</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="checkbox">Diet Restriction</td>
+                        <td>
+                            <input id="checkbox1" type="checkbox" Egg-Free>
+                            <label for="checkbox1">Egg-free</label>
+
+                            <input id="checkbox2" type="checkbox" Dairy-Free>
+                            <label for="checkbox2">Dairy-free</label>
+
+                            <input id="checkbox3" type="checkbox" Alcohol-Free>
+                            <label for="checkbox3">Alcohol-free</label>
+
+                            <input id="checkbox4" type="checkbox" Gluten-Free>
+                            <label for="checkbox4"> Gluten-free</label>
+                    </td>
+                </tr>
+                <tr class="duration">
+                    <td>Duration</td>
+                    <td><input type="number" id="hour" placeholder="00.00"> Hours:Min</td>
+                </tr>
+                <tr>
+                    <td>Servings</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><p style="margin:0; font-size:12px;" >Brief description of what this recipe is about</p><textarea name="" id="description" cols="50" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Ingredients</td>
+                    <td><p style="margin:0; font-size:12px;">List the quantity & ingredients needed, one item per line</p><textarea name="" id="ingredients" cols="50" rows="10" placeholder="Example: 1 tablespoon of baking powder 500g flour"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Directions</td>
+                    <td><p style="margin:0; font-size:12px;" >List the quantity & ingredients needed, one item per line</p><textarea name="" id="directions" cols="50" rows="10" placeholder="Example: Heat 2 tablespoon of oil add Onions .."></textarea></td>
+                </tr>
+                </table>
+
+             
+                 
+                        <h3>Recipe Photos & Video</h3>
+                <p>Include nice photos to showcase your recipe, and add an instructional video if available.</p>
+                    
+                
+
+                <table>
+                <tr>
+                    <td><p>Video(optional)</p></td>
+                    <td><input type="text" id="vid_link" ></td>
+                </tr>
+                <tr>
+                    <td><p>Images</p></td>
+                    <td><input type="text" id="img_link"></td>
+                </tr>
+            </table>
+        </div>
+       </div>
+        <button id="create_R">Create Recipe</button>
+        <div id="footer"></div>
+    </body>
+</html>
+<script src="/helpless-nation-9785/scripts/sharemyRecipe.js" type="module"></script>

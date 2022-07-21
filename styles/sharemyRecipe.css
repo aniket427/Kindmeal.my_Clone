@@ -1,0 +1,118 @@
+#parentbox{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 20px;
+  }
+  #leftbox{
+    border: 1px solid gray;
+      width: 23%;
+      height: 300px;
+      text-align: left;
+      border-top-right-radius: 10px;
+      border-top-left-radius:10px;
+    
+  }
+  #leftbox>div>h3{
+      text-align: center;
+      background-color: red;
+      margin-top: 0%;
+      padding: 10px;
+      border-top-right-radius: 10px;
+      border-top-left-radius:10px;
+      color: white;
+  }
+  #leftbox>div>p{
+      margin-left: 10px;
+     margin-bottom: 10px;
+     margin-top: 10px;
+  }
+  #form{
+      width:70%;
+      font-size: 18px;
+  }
+  #form p {
+         margin-top: 10px;
+         margin-bottom: 10px;
+  }
+  #form h4 {
+      margin-top: 10px;
+         margin-bottom: 20px;
+  }
+  #table{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+  }
+
+ 
+  input{
+      height: 30px;
+      width: 90%;
+      border-radius: 5px;
+      border: 1px solid gray;
+      outline: none;
+  }
+  select{
+      height: 30px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid gray;
+  }
+
+  textarea{
+   padding: 10px;   
+  outline: none;
+  font-size: 18px;
+  }
+  #hour{
+   text-align: center;
+   padding: 10px;
+   width: 90px;
+  }
+  
+ #checkbox+td{
+   display: grid;
+   grid-template-columns: repeat(8,1fr);
+   justify-content: space-evenly;
+   font-size: 15px;
+   
+ }
+.duration input{
+  width: 50px;
+  margin: 0px 20px;
+ outline: none;
+}
+button{
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  background-color: red;
+  border: 0px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+#vid_link{
+  width: 100%;
+}
+tr>td:first-child{
+  width: 200px;
+ font-size: 15px;
+}
+table td {
+  border: 20px solid transparent ;
+}
+td p{
+  color: grey;
+}
+td{
+  color: grey;
+  margin-top: 0px;
+ text-align: start;
+}
