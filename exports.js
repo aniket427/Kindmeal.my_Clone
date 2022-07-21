@@ -33,8 +33,8 @@ function loginfunc(){
     <div style="font-size: 28px; font-weight: 500; text-align: center;margin-top: 12px;">Member Login</div>
     <input type="text" name="" id="login_email" placeholder="Your Email" style="margin-top: 25px;">
     <input type="text" name="" id="login_password" placeholder="Your Password"><br>
-    <button id="the_login_button">Login</button>
-    <hr style="margin-top: 25px ; width:90%;margin-left: 5%; height: 0.5px;">
+    <button id="the_login_button" onclick="mainlogin()">Login</button>
+    <hr style="margin-top: 25px  ; width:90%;margin-left: 5%; height: 0.5px;">
     <button id="facebook_login">
         <img src="https://www.kindmeal.my/images/icon_button_fb.png" alt="">
         <span>Login With Facebook</span>
@@ -45,19 +45,19 @@ function loginfunc(){
     `
 }
 
-function floater(){
-    return`<div class="right_menu">
-    <button class="menu_button">menu</button>
-    <div class="floater">
-        <a href="">My Coupans</a>
-        <a href="">My Recipes</a>
-        <a href="myprofile.html">My KindMeal Profile</a>
-        <a href="">Update Profile</a>
-        <a href="">Account Settings</a>
-        <a href="">Logout</a>
-    </div>
-   </div>`
-}
+// function floater(){
+//     return`<div class="right_menu">
+//     <button class="menu_button">menu</button>
+//     <div class="floater">
+//         <a href="">My Coupans</a>
+//         <a href="">My Recipes</a>
+//         <a href="myprofile.html">My KindMeal Profile</a>
+//         <a href="">Update Profile</a>
+//         <a href="">Account Settings</a>
+//         <a  onclick="logout()">Logout</a>
+//     </div>
+//    </div>`
+// }
 
 function css(){
     return `
@@ -92,6 +92,13 @@ function css(){
         visibility: hidden;
         color: gray;
         transition:tansform 0.4s,top 0.4s
+    }
+    .main_float{
+  visibility:visible;
+    }
+    .popup_button_visibility{
+   display: none;
+   visibility: hidden;
     }
 
     .signup_popup_open{
@@ -209,6 +216,9 @@ function css(){
         margin-top: 27px;
         margin-left: 31%;
     }
+    #the_login_button:hover{
+        background-color: rgb(3, 150, 72);
+    }
     #facebook_login{
         background-color: rgb(59,89,152);
         border: 0px;
@@ -245,8 +255,10 @@ function css(){
         text-align: center;
         text-decoration:none;
         color: black;
-        padding-top: 10xp;
-        padding-bottom: 10px;
+        font-weight:500;
+        font-size:16px;
+        padding-top: 15xp;
+        padding-bottom: 15px;
     }
     .floater>a:hover{
         text-align: center;
@@ -254,10 +266,7 @@ function css(){
         background-color: whitesmoke;
     }
 
-    /* .menu_button:hover + .floater{
-        display: flex;
       
-    } */
     .right_menu:hover .floater{
         display: flex;
     }
@@ -267,11 +276,11 @@ function css(){
     .menu_button{
         width: 150px;
     }
-    #main_float{
-        // border: 1px solid;
-        width: 150px;
+    .main_float{
+        // border: 1px solid ;
+        width: 180px;
     }
     `
 }
 
-export {signupfunc,loginfunc,css,floater}
+export {signupfunc,loginfunc,css}

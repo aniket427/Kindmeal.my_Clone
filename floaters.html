@@ -14,24 +14,23 @@
 </head>
 <body >
 
-  <button onclick="open_signup_popup()">signup</button>
-  <button onclick="open_login_popup()">login</button>
-  <div id="main_float">
-   
-  </div>
+  <button onclick="open_signup_popup()" class="signup_button">signup</button>
+  <button onclick="open_login_popup()" class="login_button">login</button>
+  
 
 
 </body>
 </html>
-<script src="./login_signup_poopups.js">console.log("hii")</script>
+<script src="./login_signup_poopups.js"></script>
 <script>
     //alag script banani hogi agar kuch  aur add krna h toh upper vale me item daal k kaam nhi  karega voh bss apna link ho chuka ab chages uski js file me hi kr sakte h!
     // for example upper console.log("hii") kia but kaam nhi kr raha
-console.log("hii")
+// console.log("hii")
 </script>
+<script src="./login_signp_functionality.js"></script>
 <script type="module" >
-    import {signupfunc,loginfunc,css,floater} from  "./exports.js"
-    main_float.innerHTML=floater()
+    import {signupfunc,loginfunc,css} from  "./exports.js"
+    // main_float.innerHTML=floater()
     sigup.innerHTML=signupfunc()
     login.innerHTML=loginfunc()
     document.querySelector("#style").innerHTML=css()

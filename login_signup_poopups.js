@@ -1,9 +1,45 @@
     // signup button:-<button onclick="open_signup_popup()">signup</button>
     // login  button :-<button onclick="open_login_popup()">login</button>
 
-    var main_float=document.createElement("div")
-    main_float.setAttribute("id","main_float")
-    document.querySelector("body").append(main_float)
+  var main_float=document.createElement("div")
+  main_float.setAttribute("class","main_float")
+  var right_menu=document.createElement("div")
+  right_menu.setAttribute("class","right_menu")
+  var menu_button=document.createElement("button")
+  menu_button.setAttribute("class","menu_button")
+  menu_button.innerText="menu"
+  var floater=document.createElement("div")
+  floater.setAttribute("class","floater")
+
+ var mc= document.createElement("a")
+ mc.innerText="My Coupons"
+ var mr= document.createElement("a")
+ mr.innerText="My Recipes"
+ var mp= document.createElement("a")
+ mp.innerText="My KindMeal Profile"
+ mp.href="myprofile.html"
+ var up= document.createElement("a")
+ up.innerText="Update Profile"
+ up.href="update_profile.html"
+ var as= document.createElement("a")
+ as.innerText="Account Settings"
+ var lt= document.createElement("a")
+ lt.innerText="Logout"
+ floater.append(mc,mr,mp,up,as,lt)
+ right_menu.append(menu_button,floater)
+ main_float.append(right_menu)
+ document.querySelector("body").append(main_float)
+  lt.addEventListener("click",logout)
+
+function logout(){
+    log_but.classList.remove("popup_button_visibility")
+    sign_but.classList.remove("popup_button_visibility")
+    main_float.classList.add("popup_button_visibility")
+    localStorage.setItem("logvalue",JSON.stringify("false"))
+    var loggedin=false;
+    console.log(loggedin)
+}
+
 
     var sigup=document.createElement("div")
     sigup.setAttribute("class","signup_popup")
@@ -36,3 +72,11 @@
     function signupform(){
         location.href="signupform.html"
     }
+
+    
+
+
+
+///////////////////////////////////////////////////////////
+
+  
