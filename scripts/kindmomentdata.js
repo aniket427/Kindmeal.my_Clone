@@ -1,3 +1,4 @@
+
 var KindMoments_Page =
     [
         {
@@ -812,9 +813,6 @@ var KindMoments_Page =
         }
     ]
 
-
-
-
   for(var i=0;i<KindMoments_Page.length;i++){
     
       var fin=KindMoments_Page[i].moments;
@@ -834,15 +832,12 @@ var KindMoments_Page =
     // console.log(slide)
     
 
-let container = document.getElementById("container")
-
-
-
-
-
-
+let container = document.getElementById("containerr")
 // console.log(data)
 let display = (data) => {
+     
+    container.innerHTML = null;
+
     data.forEach(function (ele) {
         var box = document.createElement("div")
         var pic = document.createElement("img");
@@ -857,12 +852,10 @@ let display = (data) => {
         
    var box1=document.createElement("div")
     var btn=document.createElement("button")
-    btn.innerText="Search"
+    btn.innerText="View";
     btn.addEventListener("click",function(){
 
-     game(ele)
-
-
+     game(ele);
 
     })
    
@@ -888,42 +881,37 @@ let display = (data) => {
      p2.setAttribute("class","p2")
 
 
-
-
-
-
         box.append(box1,image,p2)
-
         container.append(box)
-
-
-
-
-
     })
 
 }
 
 display(fin)
 
-function game(ele){
-
-    
+function game(ele)
+{
     var userarr=JSON.parse(localStorage.getItem("userinfo"))||[];
     var userdata=
     {   username:ele.name,
         pic:ele.profilePic,
         article:ele.article,
         bg:ele.backgroundImg,
-        data:ele.date,
-        
-        
+        data:ele.date,        
     }
     userarr.push(userdata)
     console.log(userarr)
-    localStorage.setItem("userinfo",JSON.stringify(userarr))
-    
-    window.location.href="part.html"
-
-    
+    localStorage.setItem("userinfo",JSON.stringify(userarr));
+    window.location.href="part.html"   
 }
+
+function main()
+{
+    let query = document.getElementById("input").value;
+    let out = fin.filter(function(elem)
+    {
+        return query==elem.name;
+    })
+
+    display(out);
+};
