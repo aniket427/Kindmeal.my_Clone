@@ -10,8 +10,8 @@ let navbar = () => {
       <div>
           <div id="log">
               <p>Login</p>
-              <button style="color:white ; background-color:#35619f;border:none;border-radius: 5px;" class="btn2">Facebook</button>
-              <button style="color:white ; background-color:#666;border:none;border-radius: 5px;" class="btn2">Email</button>
+              <button style="color:white;border:none;border-radius: 5px;" class="btn2">Facebook</button>
+              <button style="color:white ; border:none;border-radius: 5px;" class="btn2">Email</button>
           </div>
         <p>Sign Up</p>
       </div>
