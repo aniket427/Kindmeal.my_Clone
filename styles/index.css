@@ -147,7 +147,7 @@
     border-radius: 10px;
     line-height: 30px;
     background-color: #f53838;
-    background-color: #f53838;
+   
     padding-top: 8px;
       padding-right: 15px;
       padding-bottom: 8px;
@@ -155,3 +155,10 @@
       color:#ffffff;
       border:none;
   }
+  #intro > div:nth-child(5)>button:hover{
+    background-color: #d41f1f;
+    cursor: pointer;
+      }
+ 
+
+

@@ -25,7 +25,7 @@ for (let i = 0; i < btn.length; i++) {
 // for redirecting to new page;
 let p;
 switch(i){
-case 0 :p= 'home.html';
+case 0 :p= 'index.html';
 break;
 case 1: p = '#'
 break;
@@ -66,7 +66,7 @@ let append1 = () => {
     }
     photo1.src = img1[i];
     i++;
-  }, 3000);
+  }, 1000);
 };
 append1();
 
@@ -88,6 +88,6 @@ let append2 = () => {
     }
     photo2.src = img2[i];
     i++;
-  }, 3000);
+  }, 1000);
 };
 append2();
