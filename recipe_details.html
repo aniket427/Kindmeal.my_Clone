@@ -6,23 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        #navbar {
-            width: 100%;
-            height: 100px;
-            border: 1px solid green;
-        }
-
-        #container {
-            height: 300px;
-            border: 1px solid blue;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/recipe_details.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 
 <body>
@@ -30,17 +15,74 @@
     <div id="container">
         <div id="name_strip">
             <div id="user_name"></div>
-            <div id="titled">Lifestyle Ambassador</div>
+            <div id="titled">• Lifestyle Ambassador •</div>
             <div id="followers"></div>
         </div>
     </div>
+    <div id="profile_img">
+        <img id="profile_image_link" alt="">
+    </div>
+    <div id="rd_btn">
+        <button style="background-color: rgb(245, 56, 56);">+ Follow Member</button>
+        <button style="background-color: rgb(232,232,232); color:black; font-weight:normal; ">Contact Member</button>
+    </div>
+
+    <div id="recipe_cont">
+        <div id="rec_title"></div>
+        <div id="rec_data">
+            <div id="half_block_1">
+                <img id="rec_img" src="" alt="">
+            </div>
+            <div id="half_block_2">
+                <div>
+                    <div class="det">Time</div>
+                    <div class="green" id="time_req"></div>
+                </div>
+                <div>
+                    <div class="det">Servings</div>
+                    <div class="green" id="serves"></div>
+                </div>
+
+                <div>
+                    <div class="det">Diet Restriction</div>
+                    <div class="grey">---</div>
+                </div>
+                <div>
+                    <div class="det">Rating</div>
+
+                    <div id="star">
+                        <img src="https://www.kindmeal.my/images/icon_star.png" alt="">
+                        <img src="https://www.kindmeal.my/images/icon_star.png" alt="">
+                        <img src="https://www.kindmeal.my/images/icon_star.png" alt="">
+                        <img src="https://www.kindmeal.my/images/icon_star.png" alt="">
+                        <img src="https://www.kindmeal.my/images/icon_star_half.png" alt="">
+                    </div>
+                    <div id="votes" class="grey"></div>
+                </div>
+            </div>
+        </div>
+        <div id="rec_desc">
+            <div id="desc_half_1">
+                <div class="heading">Description</div>
+                <div class="text" id="descript"></div>
+                <div class="heading">Secret Ingredients</div>
+                <div class="text" id="ingred"></div>
+            </div>
+            <div id="desc_half_2">
+                <div class="heading">Directions</div>
+                <div class="text" id="direct"></div>
+            </div>
+        </div>
+        <div id="more">
+            <div class="heading">More Photos</div>
+            <div id="more_in_div">
+                <img id="more_photo" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div id="foot"></div>
 </body>
 
 </html>
-<script>
-    let item = JSON.parse(localStorage.getItem("detail_item_view"))
-    console.log(item);
-    let container = document.querySelector("#container");
-
-    container.style.backgroundImage = `url(${item.coverimage})`
-</script>
+<script src="./scripts/recipe_details.js" type="module"></script>
