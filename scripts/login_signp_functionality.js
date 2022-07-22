@@ -2,9 +2,9 @@
 function display_name(){
     var profile_data=JSON.parse(localStorage.getItem("profile_data")) || []
     console.log(profile_data)
-    var mb=document.querySelector(".menu_button")
+    var mb=document.querySelector(".namefl")
     // mb.innerHTML="hii"
-    mb.innerText=innerText=`${profile_data.fname} ${profile_data.lname}`
+    namefl.innerText=innerText=`${profile_data.fname} ${profile_data.lname}`
 }
 
 display_name()
@@ -16,17 +16,25 @@ display_name()
 main_float=document.querySelector(".main_float")
 var loggedin=JSON.parse(localStorage.getItem("logvalue")) || false
 console.log(loggedin)
+var lg=document.querySelector(".lg")
 
+
+var fbb=document.querySelector(".fbb")
 var log_but=document.querySelector(".login_button")
 var sign_but=document.querySelector(".signup_button")
 if(loggedin == "yes"){
 log_but.classList.add("popup_button_visibility")
 sign_but.classList.add("popup_button_visibility")
+fbb.classList.add("popup_button_visibility")
+lg.classList.add("popup_button_visibility")
 main_float.classList.remove("popup_button_visibility")
+
 }
 else{
 log_but.classList.remove("popup_button_visibility")
 sign_but.classList.remove("popup_button_visibility")
+fbb.classList.remove("popup_button_visibility")
+lg.classList.remove("popup_button_visibility")
 main_float.classList.add("popup_button_visibility")
 }
 
@@ -51,10 +59,12 @@ function mainlogin(){
          localStorage.setItem("logvalue",JSON.stringify("yes"))
         //  console.log("true")
         // display_name()
-         document.querySelector(".menu_button").innerText=`${sigdata[i].fname} ${sigdata[i].lname}`
+         document.querySelector(".namefl").innerText=`${sigdata[i].fname} ${sigdata[i].lname}`
         //  main_float.innerText="hii"
          log_but.classList.add("popup_button_visibility")
          sign_but.classList.add("popup_button_visibility")
+         fbb.classList.add("popup_button_visibility")
+         lg.classList.add("popup_button_visibility")
         main_float.classList.remove("popup_button_visibility")
         }
     }

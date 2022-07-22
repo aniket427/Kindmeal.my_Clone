@@ -7,10 +7,14 @@
   right_menu.setAttribute("class","right_menu")
   var menu_button=document.createElement("button")
   menu_button.setAttribute("class","menu_button")
-  menu_button.innerText="menu"
+//   menu_button.innerText="menu"
   var floater=document.createElement("div")
   floater.setAttribute("class","floater")
-
+  var namefl=document.createElement("div")
+//   namefl.innerText="menu"
+  namefl.setAttribute("class","namefl")
+  var spimg=document.createElement("img")
+  spimg.src="https://www.kindmeal.my/images/no_photo_header.png"
  var mc= document.createElement("a")
  mc.innerText="My Coupons"
  var mr= document.createElement("a")
@@ -18,7 +22,7 @@
  var mp= document.createElement("a")
  mp.innerText="My KindMeal Profile"
  mp.href="myprofile.html"
- var up= document.createElement("a")
+ var up= document.createElement("a")  
  up.innerText="Update Profile"
  up.href="update_profile.html"
  var as= document.createElement("a")
@@ -26,14 +30,17 @@
  var lt= document.createElement("a")
  lt.innerText="Logout"
  floater.append(mc,mr,mp,up,as,lt)
+ menu_button.append(namefl,spimg)
  right_menu.append(menu_button,floater)
  main_float.append(right_menu)
- document.querySelector("body").append(main_float)
+ document.querySelector("#navbar1").append(main_float)
   lt.addEventListener("click",logout)
 
 function logout(){
     log_but.classList.remove("popup_button_visibility")
     sign_but.classList.remove("popup_button_visibility")
+    fbb.classList.remove("popup_button_visibility")
+    lg.classList.remove("popup_button_visibility")
     main_float.classList.add("popup_button_visibility")
     localStorage.setItem("logvalue",JSON.stringify("false"))
     var loggedin=false;
