@@ -34,7 +34,7 @@ case 6: p = '#'
 break;
 case 7: p = '#'
 break;
-default: x = 'undefined'
+default: 'undefined';
 }
 window.location.href = p
 // for redirecting to new page;
