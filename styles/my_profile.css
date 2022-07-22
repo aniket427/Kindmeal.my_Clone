@@ -1,0 +1,220 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+body{
+    
+    background-color: rgb(249,249,249);
+}
+#head_img{
+    width: 100%;
+   
+}
+#cont{
+    width: 80%;
+    /* background-color: transparent; */
+    height: 270px;
+    /* border: 1px solid; */
+    /* margin-top: -60px; */
+    filter: blur(10) white;
+    /* background-color: red; */
+    position: absolute;
+    top: 489px;
+    /* left: 30px; */
+    /* text-align: center; */
+    margin-left: 10%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: rgb(255,227,133);
+}
+#incont{
+    width: 97%;
+    /* background-color: transparent; */
+    height: 240px;
+    /* border: 1px solid; */
+    /* margin-top: -60px; */
+    /* filter: blur(10) white; */
+    /* background-color: red; */
+    position: absolute;
+    
+    /* margin-left: 10%; */
+   color: gray;
+    background-color: rgb(255,247,220);
+    margin-bottom: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 1.5%;
+}
+#profile_img{
+    height: 240px;
+    width: 240px;
+    box-shadow: 0px 0px 5px 0px;
+    position: relative;
+    top: -190px;
+    left: 11%;
+}
+#km{
+    background-color: rgb(245,56,56);
+    height: 42px;
+    text-align: center;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 220px;
+    font-weight: 600;
+    position: absolute;
+    left: 440px;
+    top: 387px;
+     /* margin-top: -100px; */
+}
+#sr{
+    background-color: rgb(4,190,90);
+    height: 42px;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 180px;
+    font-weight: 600;
+    position: absolute;
+    left: 690px;
+    top: 387px;
+}
+#incont>p{
+    font-weight: 500;
+}
+#color>span>p:nth-child(1){
+    height: 30px;
+    width: 30px ;
+    /* text-align: center; */
+    /* border: 1px solid; */
+    margin-top: 4px;
+}
+#color>span>p:nth-child(2){
+    /* height: 30px; */
+    /* width: 30px ; */
+    /* text-align: center; */
+    /* border: 1px solid; */
+    margin-top: 11px;
+    margin-left: 15px;
+}
+#color>span{
+    display: flex;
+}
+#username{
+    position: absolute;
+    left: 465px;
+    top: 330px;
+}
+#headline{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#lsn{
+    color:rgb(4,190,90);
+    /* height: 100px; */
+    font-size: 150px;
+    font-weight:300;
+    margin-left: 130px;
+}
+#bottom-line{
+    display: flex;
+}
+
+#minion{
+    height: 160px;
+    width: 170px;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+#loading{
+    height: 168px;
+    width: 238px;
+    margin-left: 75px;
+}
+#cover{
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    top: 130px;
+    left: 340px;
+    /* left: ; */
+    /* color: rgb(88,155,255); */
+    background-color: rgb(88,155,255);
+}
+#ch{
+    margin-top: 20px;
+}
+#level{
+    height: 160px;
+    width: 160px;
+    /* border: 1px solid; */
+    text-align: center;
+    margin-top: 30px;
+    /* margin-top: 6px; */
+}
+#bb>div{
+    width: 45%;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 9px;
+    display: flex;
+    color: white;
+}
+#bb>div>img{
+    height: 70%;
+    margin-left: 8px;
+    margin-top: 4px;
+    /* border: 1px solid white; */
+}
+#bb{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+#db{
+    width: 105%;
+    height: 160px;
+    /* border: 1px solid; */
+    /* margin-left: -20px; */
+    position: absolute;
+    top :340px;
+    left: -35px;
+    display: flex;
+}
+#db>div:nth-child(1){
+    width: 49%;
+    /* border: 1px solid; */
+    height: 100%;
+}
+#db>div:nth-child(2){
+    width: 51%;
+    /* border: 1px solid; */
+    height: 100%;
+}
+#nb{
+  width: 150px;
+  /* border: 1px solid; */
+  height: 80%;
+  margin-top: 10px;
+}
+#nbd{
+  width: 230px;
+  /* border: 1px solid; */
+  height: 80%;
+  margin-top: 10px;
+}
+#nb>p{
+    font-size: 17.5px;
+    font-weight: 500;
+    margin-top: 13px;
+    padding-left: 5px;
+}
+#nbd>p{
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 11.5px;
+}
