@@ -1,66 +1,342 @@
-/* for navbar (header) */
 * {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  #navbar {
-    position: sticky;
-    top: 0;
-    background-color: white;
-  }
-  #navbar1 {
-    display: flex;
-    justify-content: space-evenly;
-    /* border:1px solid red; */
-    align-items: center;
-    height: 100px;
-  }
-  #navbar1 > div:nth-child(2) {
-    display: flex;
-    gap: 15px;
-  }
-  .btn img {
-    width: 100%;
-    height: 100%;
-  }
-  .btn {
-    border-radius: 100%;
-    border: none;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-  }
-  #navbar1 > div:last-child {
-    display: flex;
-    gap: 5px;
-  }
-  #log {
-    display: flex;
-    gap: 10px;
-    border-right: 1px solid;
-    align-items: center;
-    padding-right: 5px;
-  }
-  .btn2 {
-    padding: 5px 25px;
-    font-weight: bold;
-  }
-  #navigation {
-    background-color: #2bb673;
-    display: flex;
-    padding: 0px 150px;
-  }
-  #navigation button {
-    padding: 10px;
-    background-color: transparent;
-    color: white;
-    font-size: 18px;
-    border: none;
-    margin: auto;
-  }
-  
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.myForm {
+  display: none;
+}
+
+.signUp {
+  position: absolute;
+  right: 5%;
+  width: 5%;
+}
+
+.form-popup {
+  width: 55%;
+  height: 75vh;
+  display: none;
+  position: fixed;
+  bottom: 11vh;
+  right: 25%;
+  background-color: #fff;
+  z-index: 9;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.cross {
+  margin-left: 96%;
+  margin-top: 1.5vh;
+  cursor: pointer;
+}
+
+.formIn {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  text-align: center;
+}
+
+.formIn>input {
+  width: 80%;
+  height: 38px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: 1px solid #c5c2c2;
+  font-size: .9em;
+}
+
+.formIn>p:first-child {
+  margin-top: 20px;
+  font-size: 1.4em;
+  color: #3f3c3c;
+}
+
+.formIn>p:nth-child(2) {
+  margin-top: 20px;
+  line-height: 20px;
+  font-size: 1em;
+  color: #8b8585;
+}
+
+.btnsub {
+  width: 60%;
+  margin: auto;
+}
+
+.btnsub>a>input {
+  margin-top: 50px;
+  height: 7vh;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #04be5a;
+  color: white;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.sepline {
+  height: 50vh;
+  width: 2px;
+  background-color: #d6cfcf;
+  position: fixed;
+  left: 47.5%;
+  bottom: 25vh;
+}
+
+.secform>div>img {
+  height: 170px;
+  width: 300px;
+  border-radius: 10px;
+  position: absolute;
+  right: 50px;
+  top: 180px;
+}
+
+.app {
+  border-radius: 5px;
+  position: absolute;
+  right: 12%;
+  bottom: 16vh;
+}
+
+.app>input {
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-color: #04be5a;
+  color: white;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.auto {
+  margin: auto;
+}
+
+.logo {
+  margin-top: 6px;
+}
+
+.logo>img {
+  height: 12vh;
+  width: 100%;
+}
+
+.upnav {
+  height: 13vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.adicons {
+  width: 14%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
+}
+
+.adicons>img {
+  width: 25%;
+  height: 6vh;
+
+}
+
+.social {
+  font-size: .8em;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+
+}
+
+.social>button {
+  margin-top: -5px;
+  height: 3vh;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.btnfb {
+  background-color: #35619f;
+}
+
+.emailbtn {
+  background-color: #666666;
+}
+
+
+.botnav{
+  height: 6vh;
+  width: 100%;
+  background-color: #2bb673;
+}
+.auto a{
+  text-decoration: none;
+  color: white;
+}
+.botnav>div {
+  padding: 10px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: white;
+  font-size: 1.25em;
+}
+
+.botnav>div>li:nth-last-child(2) {
+  color: white;
+}
+
+.work {
+  margin-top: 6vh;
+  height: 200vh;
+}
+
+.topwork {
+  width: 75%;
+}
+
+.topwork>div:nth-child(1) {
+  font-size: 2.25em;
+  color: #5a5757;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.topwork>div:nth-child(2) {
+  width: 42%;
+  font-size: 1.25em;
+  color: #817d7d;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 3vh;
+}
+
+.topwork>div:nth-child(3) {
+  width: 80%;
+  font-size: 1.75em;
+  color: #817d7d;
+  margin: auto;
+  margin-top: 6vh;
+}
+
+.textctr {
+  padding-top: 1.8vh;
+}
+
+.petlogo>img {
+  margin-bottom: 1vh;
+  height: 6vh;
+  width: 100%;
+}
+
+.explore {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10vh;
+}
+
+.explore>div {
+  height: 32vh;
+  width: 22%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 8px;
+}
+
+.explore>div>img {
+  margin-top: 1.5vh;
+  height: 14vh;
+  width: 10vw;
+}
+
+.explore>div:first-child {
+  padding-left: 4%;
+}
+
+.explore>div:nth-child(3)>img, .explore>div:nth-child(4)>img {
+  margin-left: 17%;
+
+}
+
+.explore>div:nth-child(2)>img {
+  margin-left: 20%;
+}
+
+.mealinfo {
+  font-size: 1.25em;
+  width: 70%;
+  text-align: center;
+  margin-top: 10vh;
+  line-height: 4vh;
+  color: #706b6b;
+}
+
+.mainbtn {
+  width: 32%;
+}
+
+.mainbtn>button {
+  height: 15vh;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 8vh;
+  background-color: #f53838;
+  color: white;
+  border: none;
+}
+
+.mainbtn>button>h1:nth-child(1) {
+  font-size: 2.5em;
+}
+
+.feature {
+  font-size: 1.6em;
+  width: 15%;
+  text-align: center;
+  margin-top: 10vh;
+  color: #706b6b;
+}
+
+/* .mainfimg {} */
+
+.featureimg {
+  width: 100%;
+  height: 33vh;
+  text-align: center;
+  margin-top: 4vh;
+}
+
+.fcolor {
+  margin-top: 7vh;
+  background-color: #ececec;
+}
+
+.featureimg>img {
+  position: absolute;
+  text-align: center;
+  left: 16%;
+}
+
   /* footer start */
   
   #foot > div:first-child {
@@ -77,8 +353,6 @@
     gap: 20px;
   }
   .footer > div:first-child > div {
-    /* border:1px solid blue; */
-    /* margin:auto; */
     width: 25%;
   }
   .footer > div:last-child {

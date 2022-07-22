@@ -420,6 +420,15 @@ body{
   gap:11px 0px;
   /* gap: 18px -15px; */
 }
+#containerrr
+{
+display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  margin: auto;
+  width: 80%;
+  gap:11px 0px;
+}
 #containerr>div{
 text-align: center;
 border-radius: 7px;
