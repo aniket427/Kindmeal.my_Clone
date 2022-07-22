@@ -5,17 +5,17 @@
   padding: 0;
 }
 
-.myForm {
+.myForm1 {
   display: none;
 }
 
-.signUp {
+.signUp1 {
   position: absolute;
   right: 5%;
   width: 5%;
 }
 
-.form-popup {
+.form-popup1 {
   width: 55%;
   height: 75vh;
   display: none;
@@ -28,13 +28,13 @@
   border-radius: 12px;
 }
 
-.cross {
+.cross1 {
   margin-left: 96%;
   margin-top: 1.5vh;
   cursor: pointer;
 }
 
-.formIn {
+.formIn1 {
   margin-left: 30px;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
   text-align: center;
 }
 
-.formIn>input {
+.formIn1>input {
   width: 80%;
   height: 38px;
   margin: auto;
@@ -52,25 +52,25 @@
   font-size: .9em;
 }
 
-.formIn>p:first-child {
+.formIn1>p:first-child {
   margin-top: 20px;
   font-size: 1.4em;
   color: #3f3c3c;
 }
 
-.formIn>p:nth-child(2) {
+.formIn1>p:nth-child(2) {
   margin-top: 20px;
   line-height: 20px;
   font-size: 1em;
   color: #8b8585;
 }
 
-.btnsub {
+.btnsub1 {
   width: 60%;
   margin: auto;
 }
 
-.btnsub>a>input {
+.btnsub1>a>input {
   margin-top: 50px;
   height: 7vh;
   width: 100%;
@@ -82,7 +82,7 @@
   cursor: pointer;
 }
 
-.sepline {
+.sepline1 {
   height: 50vh;
   width: 2px;
   background-color: #d6cfcf;
@@ -91,7 +91,7 @@
   bottom: 25vh;
 }
 
-.secform>div>img {
+.secform1>div>img {
   height: 170px;
   width: 300px;
   border-radius: 10px;
@@ -100,14 +100,14 @@
   top: 180px;
 }
 
-.app {
+.app1 {
   border-radius: 5px;
   position: absolute;
   right: 12%;
   bottom: 16vh;
 }
 
-.app>input {
+.app1>input {
   height: 50px;
   width: 200px;
   border: none;
@@ -117,24 +117,24 @@
   border-radius: 5px;
 }
 
-.pointer {
+.pointer1 {
   cursor: pointer;
 }
 
-.auto {
+.auto1 {
   margin: auto;
 }
 
-.logo {
+.logo1{
   margin-top: 6px;
 }
 
-.logo>img {
+.logo1>img {
   height: 12vh;
   width: 100%;
 }
 
-.upnav {
+.upnav1 {
   height: 13vh;
   width: 80%;
   display: flex;
@@ -142,20 +142,20 @@
 }
 
 
-.adicons {
+.adicons1 {
   width: 14%;
   display: flex;
   justify-content: space-between;
   margin-top: 3vh;
 }
 
-.adicons>img {
+.adicons1>img {
   width: 25%;
   height: 6vh;
 
 }
 
-.social {
+.social1 {
   font-size: .8em;
   width: 20%;
   display: flex;
@@ -164,7 +164,7 @@
 
 }
 
-.social>button {
+.social1>button {
   margin-top: -5px;
   height: 3vh;
   width: 30%;
@@ -173,25 +173,25 @@
   color: white;
 }
 
-.btnfb {
+.btnfb1 {
   background-color: #35619f;
 }
 
-.emailbtn {
+.emailbtn1 {
   background-color: #666666;
 }
 
 
-.botnav{
+.botnav1{
   height: 6vh;
   width: 100%;
   background-color: #2bb673;
 }
-.auto a{
+.auto1 a{
   text-decoration: none;
   color: white;
 }
-.botnav>div {
+.botnav1>div {
   padding: 10px;
   width: 70%;
   display: flex;
@@ -201,7 +201,7 @@
   font-size: 1.25em;
 }
 
-.botnav>div>li:nth-last-child(2) {
+.botnav1>div>li:nth-last-child(2) {
   color: white;
 }
 
