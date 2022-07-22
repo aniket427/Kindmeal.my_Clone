@@ -1,4 +1,3 @@
-
 var KindMoments_Page =
     [
         {
@@ -832,7 +831,8 @@ var KindMoments_Page =
     // console.log(slide)
     
 
-let container = document.getElementById("containerr")
+let container = document.getElementById("container")
+let container1 = document.getElementById("containerr")
 // console.log(data)
 let display = (data) => {
      
@@ -887,8 +887,60 @@ let display = (data) => {
 
 }
 
-display(fin)
+let display1 = (data) => {
+     
+    container1.innerHTML = null;
 
+    data.forEach(function (ele) {
+        var box = document.createElement("div")
+        var pic = document.createElement("img");
+        pic.setAttribute("class","pics")
+        for (var i = 0; i < fin.length; i++) {
+            pic.setAttribute("src", ele.profilePic)
+        }
+        pic.style.height = "50px"
+        pic.style.width = "50px"
+        pic.style.borderRadius = "50%"
+        
+        
+   var box1=document.createElement("div")
+    var btn=document.createElement("button")
+    btn.innerText="View";
+    btn.addEventListener("click",function(){
+
+     game(ele);
+
+    })
+   
+   var p1 = document.createElement("p");
+   p1.innerText = ele.name;
+   box1.append(pic,p1,btn)
+   box1.setAttribute("class","box1")
+        
+        
+
+        var image = document.createElement("img")
+        for (var i = 0; i < fin.length; i++) {
+            image.setAttribute("src", ele.foodImg)
+        }
+        image.style.height = "300px";
+        image.style.width = "351px"
+
+
+
+   
+     var p2=document.createElement("p");
+     p2.innerText=ele.about;
+     p2.setAttribute("class","p2")
+
+
+        box.append(box1,image,p2)
+        container1.append(box)
+    })
+
+}
+display(fin)
+display1(fin);
 function game(ele)
 {
     var userarr=JSON.parse(localStorage.getItem("userinfo"))||[];
@@ -907,7 +959,7 @@ function game(ele)
 
 function main()
 {
-    let query = document.getElementById("input").value;
+    let query = document.getElementById("search").value;
     let out = fin.filter(function(elem)
     {
         return query==elem.name;

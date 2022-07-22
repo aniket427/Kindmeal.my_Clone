@@ -62,7 +62,10 @@ let append1 = () => {
     if (i == img1.length) {
       i = 0;
     }
-    photo1.src = img1[i];
+    // photo1.src = img1[i]; // This is error, We cannot assign images to html in this manner.
+    
+    //Bug solution down
+    photo1.setAttribute("src", img1[i])
     i++;
   }, 1000);
 };
@@ -84,7 +87,8 @@ let append2 = () => {
     if (i == img2.length) {
       i = 0;
     }
-    photo2.src = img2[i];
+    // photo2.src = img2[i];
+    photo2.setAttribute("src", img2[i])
     i++;
   }, 1000);
 };
