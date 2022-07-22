@@ -77,6 +77,37 @@ function css(){
         color: gray;
         transition:tansform 0.4s,top 0.4s
     }
+    .right_menu{
+        /* background-color: red; */
+        position: absolute;
+       }
+       .floater>a{
+       background-color: white;
+       }
+       .signup_button{
+        position: absolute;
+        margin-top: -22px;
+        margin-left: 270px;
+        cursor: pointer;
+       }
+       .menu_button{
+       height: 50px;
+       /* max-height: 60px; */
+       width: 150px;
+       margin-top: -10px;
+       border: 0px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 18px;
+    display: flex;
+       }
+      .namefl{
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .menu_button>img{
+        margin-top: 4px;
+        margin-left: 10px;
+      }
     .login_popup{
         font-family: Roboto,arial;
         width: 615px;

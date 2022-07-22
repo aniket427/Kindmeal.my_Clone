@@ -10,36 +10,7 @@
 
 </style>
  <style>
-   .right_menu{
-    /* background-color: red; */
-    position: absolute;
-   }
-   .floater>a{
-   background-color: white;
-   }
-   .signup_button{
-    position: absolute;
-    margin-top: -22px;
-    margin-left: 270px;
-    cursor: pointer;
-   }
-   .menu_button{
-   height: 40px;
-   width: 150px;
-   margin-top: -10px;
-   border: 0px;
-border-radius: 10px 10px 0px 0px;
-font-size: 18px;
-display: flex;
-   }
-  .namefl{
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-  .menu_button>img{
-    margin-top: 4px;
-    margin-left: 10px;
-  }
+   
  </style>
 </head>
 <body >
@@ -61,38 +32,31 @@ display: flex;
             <button style="color:white ; background-color:#35619f;border:none;border-radius: 5px;padding: 5px 25px;
             font-weight: bold;"  class="fbb">Facebook</button>
             <button onclick="open_login_popup()" class="login_button" style="color:white ; background-color:#35619f;border:none;border-radius: 5px;padding: 5px 25px;
-            font-weight: bold;color:white ; background-color:#666;border:none;border-radius: 5px;" class="btn2">Email</button>
+            font-weight: bold;color:white ; background-color:#666;border:none;border-radius: 5px;margin-left: 5px;" class="btn2">Email</button>
         </div>
       <p onclick="open_signup_popup()" class="signup_button">Sign Up</p>
     </div>
     </div>
     <div id="navigation">
-        <button class="btn3">Home</button>
-        <button class="btn3">Recipes</button>
-        <button class="btn3">Share Recipe</button>
-        <button class="btn3">KindMoments</button>
-        <button class="btn3">Hot Picks</button>
-        <button class="btn3">Help</button>
-        <button class="btn3">Meal Deals</button>
-        <button class="btn3">Articles</button>
+         <a href="index.html"><button class="btn3">Home</button></a>
+         <a href=""><button class="btn3">Meal Deals</button></a>
+         <a href="kindmoment.html"><button class="btn3">KindMoments</button></a>
+         <a href=""><button class="btn3">Hot Picks</button></a>
+         <a href="recipe.html"><button class="btn3" >Recipe</button></a>
+         <a href="sharemyRecipe.html"><button class="btn3">Share Recipe</button></a>
+         <a href="artical.html"><button class="btn3">Articles</button></a>
+        <a href="help.html"><button class="btn3">Help</button></a>
+        
     </div>`;
-
+    <div id="foot"></div>
 </body>
 </html>
 <script src="./scripts/login_signup_poopups.js"></script>
-<script>
-</script>
 <script src="./scripts/login_signp_functionality.js"></script>
 <script type="module" >
     import {signupfunc,loginfunc,css} from  "./scripts/exports.js"
-    // main_float.innerHTML=floater()
     sigup.innerHTML=signupfunc()
     login.innerHTML=loginfunc()
     document.querySelector("#style").innerHTML=css()
 </script>
-<script type="module">
-
-</script>
-
-
 <script src="./scripts/index.js" type="module"></script>
