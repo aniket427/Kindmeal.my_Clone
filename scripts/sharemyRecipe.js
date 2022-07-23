@@ -6,10 +6,13 @@ document.querySelector("#foot").innerHTML=footer();
 
 
 
+
 let button = document.querySelector("#create_R");
 
 button.addEventListener("click",function(){
-    
+ 
+  console.log("hii")
+  
   let title = document.querySelector("#name").value;
   let category=document.querySelector("#p_selector").value;
   let scategory=document.querySelector("#s_selector").value;
@@ -21,9 +24,18 @@ button.addEventListener("click",function(){
   let video=document.querySelector("#vid_link").value;
 
   let recipedata = new myrecipe(title,category,scategory,description,ingredients,directions,time,recipeimage,video);
-  let Arr_data =JSON.parse(localStorage.getItem("recipe_db")) || [];
+  let Arr_data =JSON.parse(localStorage.getItem("hii")) || [];
   Arr_data.push(recipedata);
   localStorage.setItem("recipe_db",JSON.stringify(Arr_data));
+  
+  
+  
+
+
+
+
+
+
 //   console.log(recipedata)
 })
 
