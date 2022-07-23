@@ -62,4 +62,4 @@ This project was a result of the collaboration of five team members within five 
 ## Netlify link :-
 
 
-<a href="https://kindmeal-helpless-nation.netlify.app">kindmeal-helpless-nation.netlify.app</a>
+<a href="http://harmonious-crostata-782582.netlify.app/">http://harmonious-crostata-782582.netlify.app/</a>
