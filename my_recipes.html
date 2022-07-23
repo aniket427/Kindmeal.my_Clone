@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="./styles/navbar.css">
+
     <style>
        *{
            margin: 0%;
            padding: 0%;
-           background-color: rgb(252,252,252);
+           /* background-color: rgb(252,252,252); */
        }
         #cont{
             color: grey;
@@ -79,7 +81,42 @@
             color: rgb(127,127,127);
             cursor: pointer;
         }
+        #recipe_card_box{
+            width: 80%;
+            margin-left: 10%;
+            /* border: 1px solid; */
+        }
+        .floater{
+        /* display: none; */
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        margin-left: -15px;
+        width: 180px;
+      
+    }
+    #recipe_card_box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        /* border: 1px solid; */
+        justify-content: space-between;
+    }
+    #recipe_card_box>div>img{
+        height: 300px;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    #recipe_card_box>div{
+        border: 1px solid;
+        width: 95%;
+        border-radius: 10px;
+    }
+    #recipe_card_box>div>p{
+        margin-top: 25px;
+    }
     </style>
+    <style id="style"></style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -87,6 +124,38 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="navbar1">
+        <div> <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></div>
+    
+        <div>
+        <div><button class="btn"><img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt=""></button></div>
+        <div><button class="btn"><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></button></div>
+        <div><button class="btn"><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></button></div>
+        </div>
+        <div>
+            <div id="log">
+                <p class="lg">Login</p>
+                <button style="color:white ; background-color:#35619f;border:none;border-radius: 5px;padding: 5px 25px;
+                font-weight: bold;"  class="fbb">Facebook</button>
+                <button onclick="open_login_popup()" class="login_button" style="color:white ; background-color:#35619f;border:none;border-radius: 5px;padding: 5px 25px;
+                font-weight: bold;color:white ; background-color:#666;border:none;border-radius: 5px;margin-left: 5px;" class="btn2">Email</button>
+            </div>
+          <p onclick="open_signup_popup()" class="signup_button">Sign Up</p>
+        </div>
+        </div>
+        <div id="navigation">
+             <a href="index.html"><button class="btn3">Home</button></a>
+             <a href=""><button class="btn3">Meal Deals</button></a>
+             <a href="kindmoment.html"><button class="btn3">KindMoments</button></a>
+             <a href=""><button class="btn3">Hot Picks</button></a>
+             <a href="recipe.html"><button class="btn3" >Recipe</button></a>
+             <a href="sharemyRecipe.html"><button class="btn3">Share Recipe</button></a>
+             <a href="artical.html"><button class="btn3">Articles</button></a>
+            <a href="help.html"><button class="btn3">Help</button></a>
+            
+        </div>
+
+
     <div id="cont">
         <div id="img_line">
             <div class="card">
@@ -99,38 +168,42 @@
                 <a href="myprofile.html" style="margin-top: 90px;position: absolute;">My KindMeal Profile</a>
                 <a href="update_profile.html" style="margin-top: 110px;position: absolute;">Update Profile</a>
                 <a href="" style="margin-top: 130px;position: absolute;">Account Settings</a>
-                <a onclick="addrecipe()" style="margin-top: 180px;position: absolute;">Logout</a>
+                <a onclick="logout()" style="margin-top: 180px;position: absolute;">Logout</a>
                 <!-- <p style="text-align: center;">Food Lover Sign Up</p> -->
             </div>
         </div>
         <div id="content">
            <!-- <div style="display: flex;"s> -->
-            <p style="font-size:29px;margin-top: 35px;color: black;">              Manage My Recipes </p> 
+            <p style="font-size:29px;margin-top: 35px;color: black;" >              Manage My Recipes </p> 
             <!-- <button onclick="changepage()" id="vp" style="font-size:25px;margin-top: 18px;
             margin-left: 310px;height: 40px;width: 220px;border-radius: 10px;border: 0px;font-weight: 50;"> View Profile</button>
            </div>         -->
            <br>
            <p style="margin-top: 25px;">Have yummy recipes to share? Feature your delicious masterpieces on KindMeal Recipes and share them with your friends to encourage creative meat-free dining!</p>
            <!-- <p style="margin-top: 25px;margin-bottom: 55px;">To update your cover photo or headshot, please proceed to your Public Profile and click on the "Edit Cover Photo" or "Edit Headshot" button at lower right corner of cover photo.</p> -->
-           <button onclick="update()"  id="submit">Add New Recipe</button>
+           <button onclick="addrecipe()"  id="submit">Add New Recipe</button>
         </div>
     </div>
+    <div id="recipe_card_box"></div>
+    <div id="foot" style="margin-top: 250px;margin-bottom: -35px;"></div>
+
 </body>
 </html>
-<script>
+<script src="./scripts/my_recipe.js">
 
-function addrecipe(){
-    // // log_but.classList.remove("popup_button_visibility")
-    // // sign_but.classList.remove("popup_button_visibility")
-    // // main_float.classList.add("popup_button_visibility")
-    // localStorage.setItem("logvalue",JSON.stringify("false"))
-    // var loggedin=false;
-    // // console.log(loggedin)
-    // alert("logout successfull")
-    // location.href="floaters.html"
-}
+
 
 
    
 
 </script>
+<script src="./scripts/login_signup_poopups.js"></script>
+<script src="./scripts/login_signp_functionality.js"></script>
+<script type="module" >
+    import {signupfunc,loginfunc,css} from  "./scripts/exports.js"
+    sigup.innerHTML=signupfunc()
+    login.innerHTML=loginfunc()
+    document.querySelector("#style").innerHTML=css()
+</script>
+
+<script src="./scripts/index.js" type="module"></script>

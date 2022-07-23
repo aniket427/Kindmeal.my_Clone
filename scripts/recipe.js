@@ -1,6 +1,8 @@
 
-import { footer } from "../components/navbar.js"
+import { navbar, footer } from "../components/navbar.js"
 
+const nav = document.getElementById('navbar');
+nav.innerHTML = navbar();
 
 const foot = document.getElementById('foot');
 foot.innerHTML = footer();
@@ -42,12 +44,10 @@ let recipe_db = [
     followers: "30",
     servings: "Depends",
     rating: "6",
-    description: "This is the Vegetarian VFC that I created. Idea sourced from KFC.",
-    ingredients: ["1) King Oyster Mushrooms", "2) Light Soya Sauce", "3) Sesame Oil", "4) Italian Herbs", "5) Parsley", "6) Chilli pepper", "7) Black Pepper", "8) Salt"],
-    directions: ["1. Wash the rice and pour in the coconut milk, salt, lemon grass, pandan leaves and ginger.", "2. Add the water to level 3 of the rice cooker and cook it.",
-      "3. Once it is done, mixed the rice in the cooker so that the coconut milk is evenly mixed around.",
-      "4. For the side dishes, it is optional for individual to cook whatever they like."],
-    morephotos: "https://www.kindmeal.my/photos/recipe/1000/1000009-19416-m.jpg",
+    description: null,
+    ingredients: "",
+    directions: "",
+    morephotos: "",
 
   },
   {

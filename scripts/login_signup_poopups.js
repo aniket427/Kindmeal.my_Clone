@@ -19,6 +19,7 @@
  mc.innerText="My Coupons"
  var mr= document.createElement("a")
  mr.innerText="My Recipes"
+ mr.href="my_recipes.html"
  var mp= document.createElement("a")
  mp.innerText="My KindMeal Profile"
  mp.href="myprofile.html"

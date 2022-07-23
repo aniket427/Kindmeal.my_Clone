@@ -20,7 +20,7 @@ body{
     filter: blur(10) white;
     /* background-color: red; */
     position: absolute;
-    top: 489px;
+    top: 570px;
     /* left: 30px; */
     /* text-align: center; */
     margin-left: 10%;
@@ -66,7 +66,7 @@ body{
     font-weight: 600;
     position: absolute;
     left: 440px;
-    top: 387px;
+    top: 487px;
      /* margin-top: -100px; */
 }
 #sr{
@@ -80,7 +80,7 @@ body{
     font-weight: 600;
     position: absolute;
     left: 690px;
-    top: 387px;
+    top: 487px;
 }
 #incont>p{
     font-weight: 500;
@@ -106,13 +106,16 @@ body{
 #username{
     position: absolute;
     left: 465px;
-    top: 330px;
+    top: 430px;
 }
 #headline{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
+/* .userme{
+    border: 1px solid;
+} */
 #lsn{
     color:rgb(4,190,90);
     /* height: 100px; */
@@ -127,26 +130,30 @@ body{
 #minion{
     height: 160px;
     width: 170px;
-    margin-left: 65px;
+    margin-left: 30px;
     margin-top: 10px;
 }
 #loading{
     height: 168px;
-    width: 238px;
-    margin-left: 75px;
+    width: 228px;
+    margin-left: 35px;
 }
 #cover{
-    height: 50px;
-    width: 130px;
+    height: 45px;
+    width: 120px;
     position: absolute;
     top: 130px;
-    left: 340px;
+    left: 300px;
     /* left: ; */
     /* color: rgb(88,155,255); */
     background-color: rgb(88,155,255);
 }
 #ch{
+    /* border: 1px solid; */
+    width: 200px;
     margin-top: 20px;
+    margin-left: -10px;
+    font-size: 14px;
 }
 #level{
     height: 160px;
@@ -192,7 +199,7 @@ body{
 }
 #db>div:nth-child(2){
     width: 51%;
-    /* border: 1px solid; */
+    border: 1px solid;
     height: 100%;
 }
 #nb{
