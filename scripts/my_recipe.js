@@ -1,7 +1,13 @@
 function addrecipe(){
     location.href="sharemyrecipe.html"
 }
-    document.querySelector("#recipe_card_box").innerHTML=null;
+
+
+var logv=JSON.parse(localStorage.getItem("logvalue")) || ""
+
+if(logv=="yes")
+
+    {document.querySelector("#recipe_card_box").innerHTML=null;
     var profile_data=JSON.parse(localStorage.getItem("profile_data")) || []
     console.log(profile_data)
 
@@ -20,7 +26,7 @@ function addrecipe(){
         res.innerText=`RECIPE: ${data.recipe}`
         rc.append(fimg,ing,res)
         document.querySelector("#recipe_card_box").append(rc)
-    });
+    });}
 
  
 // }

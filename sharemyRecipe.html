@@ -75,7 +75,7 @@
                 <tr class="tr">
                     <td>Recipe Name </td>
                     <td>
-                        <input id="name" type="text">
+                        <input id="name" type="text" style="margin-left: 0px;">
                     </td>
                 </tr>
                 <tr>
@@ -121,17 +121,17 @@
                 <tr>
                     <td id="checkbox">Diet Restriction</td>
                         <td>
-                            <input id="checkbox1" type="checkbox" Egg-Free>
-                            <label for="checkbox1">Egg-free</label>
+                            <input style="margin-left: -170px;" id="checkbox1" type="checkbox" Egg-Free>
+                            <label style="margin-left: -130px;margin-top: 20px;" for="checkbox1">Egg-free</label>
 
-                            <input id="checkbox2" type="checkbox" Dairy-Free>
-                            <label for="checkbox2">Dairy-free</label>
+                            <input style="margin-left: -170px;" id="checkbox2" type="checkbox" Dairy-Free>
+                            <label style="margin-left: -130px;margin-top: 20px;" for="checkbox2">Dairy-free</label>
 
-                            <input id="checkbox3" type="checkbox" Alcohol-Free>
-                            <label for="checkbox3">Alcohol-free</label>
+                            <input style="margin-left: -170px;" id="checkbox3" type="checkbox" Alcohol-Free>
+                            <label style="margin-left: -130px;margin-top: 20px;" for="checkbox3">Alcohol-free</label>
 
-                            <input id="checkbox4" type="checkbox" Gluten-Free>
-                            <label for="checkbox4"> Gluten-free</label>
+                            <input style="margin-left: -170px;" id="checkbox4" type="checkbox" Gluten-Free>
+                            <label style="margin-left: -130px;margin-top: 20px;" for="checkbox4"> Gluten-free</label>
                     </td>
                 </tr>
                 <tr class="duration">
@@ -140,7 +140,7 @@
                 </tr>
                 <tr>
                     <td>Servings</td>
-                    <td><input type="text"></td>
+                    <td><input type="text" style="margin-left: 0px;"></td>
                 </tr>
                 <tr>
                     <td>Description</td>
@@ -166,16 +166,16 @@
                 <table>
                 <tr>
                     <td><p>Video(optional)</p></td>
-                    <td><input type="text" id="vid_link" ></td>
+                    <td><input style="margin-left: 0px;" type="text" id="vid_link" ></td>
                 </tr>
                 <tr>
                     <td><p>Images</p></td>
-                    <td><input type="text" id="img_link"></td>
+                    <td><input style="margin-left: 0px;" type="text" id="img_link"></td>
                 </tr>
             </table>
         </div>
        </div>
-        <button id="create_R">Create Recipe</button>
+        <button id="create_R" onclick="sendrec()" >Create Recipe</button>
         <div id="foot"></div>
     </body>
 </html>
@@ -189,3 +189,58 @@
     document.querySelector("#style").innerHTML=css()
 </script>
 <script src="./scripts/index.js" type="module"></script>
+<script>
+    function sendrec(){
+        let ingredients=document.querySelector("#ingredients").value;
+        let recipeimage=document.querySelector("#img_link").value;
+        let directions=document.querySelector("#directions").value;
+        var lgv=JSON.parse(localStorage.getItem("logvalue")) || []
+        var pda=JSON.parse(localStorage.getItem("profile_data")) || []
+        var sda=JSON.parse(localStorage.getItem("sigdata")) || []
+
+        console.log(lgv)
+        // console.log(pda)
+        // console.log(sga)
+
+        // console.log(profile_data)
+
+
+if(lgv !=="yes"){
+  
+  alert("you have to log in first")
+}
+
+else{
+
+if(ingredients.length==0){
+ alert("please enter engredients requird ")
+}
+else if(directions.length==0){
+    alert("please enter the directions")
+}
+else if(recipeimage.length==0){
+    alert("please enter the image url")
+}
+
+else {
+     var resobj={img:recipeimage,ingrediants:ingredients,recipe:directions}
+
+//   console.log(pda)
+//   console.log(resobj)
+  for(var i=0;i<sda.length;i++){
+if(sda[i].email==pda.email){
+    console.log(sda[i])
+  pda.recipes.push(resobj)
+  sda[i].recipes.push(resobj)
+  localStorage.setItem("profile_data",JSON.stringify(pda))
+  localStorage.setItem("sigdata",JSON.stringify(sda))
+      
+  alert('recipe added successfully')
+  location.href("my_recipes.html")
+}
+  } 
+}
+}
+//   console.log("hii")
+}
+</script>

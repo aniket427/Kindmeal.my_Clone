@@ -45,7 +45,9 @@ function logout(){
     main_float.classList.add("popup_button_visibility")
     localStorage.setItem("logvalue",JSON.stringify("false"))
     var loggedin=false;
+    alert("logout successful")
     console.log(loggedin)
+    location.reload()
 }
 
 
