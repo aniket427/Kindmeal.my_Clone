@@ -2,9 +2,7 @@
 
  text-decoration: none;
  color:black;
-
 }
-
 *{
     margin: 0px;
     padding: 0px;
@@ -12,18 +10,40 @@
   #select{
     overflow: scroll;
    }
-  #btn {
-    background-color: #f53838;
-    cursor: pointer;
+   .box {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    float: right;
+    margin-top: -12%;
+}
+.button_red {
+    font-family: 'Roboto', Arial;
+    width: 150px;
     height: 30px;
-width:150px;
+    line-height: 19px;
+    background-color: #f53838;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 6px;
+    margin: 10px;
+}
+  #btn {
+height: 30px;
+width:180px;
 border-radius: 5px;
+background-color: #f53838;
 border: 1px solid grey;
-padding-left: 5px;
 font-family: 'Poppins', sans-serif;
-font-size: larger;
-font-weight: bolder;
-margin-left: 10%;
+font-size: medium;
+margin-top: 8%;
+border-radius: 5px;
+font-weight: bold;
+margin-left: 35%;
+color:#ffffff;
   }
 
   #parts {
@@ -280,11 +300,12 @@ margin-left: 10%;
 
 #opt{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
 }
 #opt>div{
     display: flex;
-    margin: 10px 50px;
 }
 #opt>div:first-child>div:first-child{
     background-color: #2bb673;
@@ -295,40 +316,60 @@ margin-left: 10%;
     color: #ffffff;
     font-weight: normal;
     cursor: pointer;
-    display: block
+    display: block;
+    font-family: 'Poppins', sans-serif;
 }
 #opt>div:first-child>div{
 
-    padding: 8px 5px 8px 5px;
+    padding: 2px 8px 2px 8px;
     border: 1px solid #d8d8d8;
     font-size: 14px;
     border-radius: 5px;
+    margin-left: 5%;
+    font-family: 'Poppins', sans-serif;
 }
-#input{
+#search{
 height: 30px;
-width:150px;
+width:180px;
 border-radius: 5px;
 border: 1px solid grey;
-padding-left: 5px;
 font-family: 'Poppins', sans-serif;
-font-size: larger;
-font-weight: bolder;
-
+font-size: medium;
+color: black;
+}
+#btn-default
+{
+    height: 30px;
+    width:180px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    color: black;
+    height: 30px;
+background-color: #f53838;
+border: 1px solid grey;
+font-family: 'Poppins', sans-serif;
+font-size: medium;
+margin-top: -5%;
+border-radius: 5px;
+font-weight: bold;
+margin-left: 5%;
+color:#ffffff;  
 }
 #select{
 height: 30px;
-width:150px;
+width:180px;
 border-radius: 5px;
 border: 1px solid grey;
-padding-left: 5px;
 font-family: 'Poppins', sans-serif;
-font-size: larger;
-font-weight: bolder;
-margin-left: 5%;
-margin-right: -2%;
+font-size: medium;
+margin-top: 8%;
+border-radius: 5px;
+font-weight: bold;
+margin-left: 30%;
+color: teal;
 }
-
-
 .bg{
   height:380px;
   width: 1520px;

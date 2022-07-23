@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1176b352c6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+  <link rel="stylesheet" type="text/css" href="./styles/hot.css">
+  <link rel="stylesheet" type="text/css" href="./styles/hot2.css">
+  <title>Hot Picks</title>
+  <style id="style"  >      
+
+  </style>  
+<style>
+  #btn {
+    padding: 7px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+  }
+
+  #parts {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    gap: 11px 11px;
+    width: 81%;
+    margin: auto;
+
+  }
+
+  #parts>div {
+
+    text-align: center;
+    /* border: 1px solid black; */
+    height: auto;
+    width: 152px;
+    padding: 11px 10px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+  }
+
+  #parts>div:first-child {
+    background-color: #2bb673;
+    color: white;
+
+  }
+
+  #parts>div:hover {
+    /* background-color:#666666; */
+    background-color: azure;
+    cursor: pointer;
+  }
+  #bars{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+
+
+  }
+ #linne{
+    margin-left: 271px;
+    color: blue;
+ }
+ #linne>div{
+
+    margin: 2px 11px;
+    cursor: pointer;
+ }
+ #lastbtn{
+    width: 1040px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 60px;
+ }
+ #parts>div a{
+  text-decoration: none;
+  color: black;
+ }
+ #parts>div{
+  font-size: 20px;
+ }
+</style>
+</head>
+<body>
+  
+  
+  <div id="navbar1">
+    <div> <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></div>
+
+    <div>
+    <div><button class="btn"><img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt=""></button></div>
+    <div><button class="btn"><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></button></div>
+    <div><button class="btn"><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></button></div>
+    </div>
+    <div>
+        <div id="log">
+            <p class="lg">Login</p>
+            <button style="color:white ; background-color:#35619f;border:none;border-radius: 5px;padding: 5px 25px;
+            font-weight: bold;"  class="fbb">Facebook</button>
+            <button onclick="open_login_popup()" class="login_button" style="color:white ; background-color:#35619f;border:none;border-radius: 5px;padding: 5px 25px;
+            font-weight: bold;color:white ; background-color:#666;border:none;border-radius: 5px;margin-left: 5px;" class="btn2">Email</button>
+        </div>
+      <p onclick="open_signup_popup()" class="signup_button">Sign Up</p>
+    </div>
+    </div>
+    <div id="navigation">
+         <a href="index.html"><button class="btn3">Home</button></a>
+         <a href="picks.html"><button class="btn3">Meal Deals</button></a>
+         <a href="kindmoment.html"><button class="btn3">KindMoments</button></a>
+         <a href="hot.html"><button class="btn3">Hot Picks</button></a>
+         <a href="recipe.html"><button class="btn3" >Recipe</button></a>
+         <a href="sharemyRecipe.html"><button class="btn3">Share Recipe</button></a>
+         <a href="artical.html"><button class="btn3">Articles</button></a>
+        <a href="help.html"><button class="btn3">Help</button></a>
+        
+    </div>
+<!-- Navbar/Header Section End -->
+
+
+  <div id="items_category"></div>
+
+  <div id="detail">
+    <h2>All Categories<span style="color:gray;margin-left: 7px;">|</span> <span
+        style="color:gray;margin-left: 9px;">Hot Picks</span> </h2>
+    <br>
+    <p>Discover our food lover community's top picks.Easily locate tasty meat-free bargain deals, and get creative ideas for your gastronomic indulgence!
+    </p>
+    <br>
+    <p>Click into a featured deal to instantly obtain free coupons, or read more on our members' delicious recommendations.</p>
+    <br><br>
+  </div>
+  <br><br>
+  <div id="parts">
+    <div><a href="hot.html"> All Categories</a></div>
+    <div><a href="picks.html"> Pasta</a></div>
+    <div><a href="picks.html">Burger</a></div>
+    <div>Breakfast</div>
+    <div>Salad</div>
+    <div>Bakery</div>
+    <div>Tea & Dessert</div>
+    <div>Local Delights</div>
+    <div>Jap & Korean</div>
+    <div>Chinese</div>
+    <div>Indian</div>
+    <div>Soup</div>
+    <div>Cute</div>
+    <div>DIY</div>
+  </div>
+   <div id="main">
+    <div id="bars">
+
+        <div><h2><a href="kindmoment.html"> Pasta Fiesta </a></h2></div>
+        <div id="linne" style="display:flex;">
+            <div><a href="deal.html"></a> View Pasta Deals</a></div>
+            <div>View All Pasta Hot Picks</div>
+        </div>
+    </div>
+<div id="container">
+</div>
+<b><hr></b>
+<br>
+<div id="articles"> 
+</div>
+<br>
+<button  id="lastbtn"><a href="#"></a> View All Pastta Fiesta Hot Picks >></button>
+<br><br>
+  </div> 
+ <br>
+ <div id="foot"></div>
+ <script src="./scripts/hotty.js"></script>
+</script>
+<script type="module" src="./scripts/index.js"></script>
+<script src="./scripts/login_signup_poopups.js"></script>
+<script src="./scripts/login_signp_functionality.js"></script>
+<script type="module" >
+    import {signupfunc,loginfunc,css} from  "./scripts/exports.js"
+    sigup.innerHTML=signupfunc()
+    login.innerHTML=loginfunc()
+    document.querySelector("#style").innerHTML=css()
+</script>
+</body>
+</html>

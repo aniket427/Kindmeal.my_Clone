@@ -2,7 +2,7 @@
 import { navbar, footer } from "../components/navbar.js"
 
 document.querySelector("#navbar").innerHTML=navbar();
-document.querySelector("#footer").innerHTML=footer();
+document.querySelector("#foot").innerHTML=footer();
 
 
 
@@ -39,11 +39,3 @@ function myrecipe(title,category,scategory,description,ingredients,directions,ti
       this.recipeimage=recipeimage;
       this.video=video;
 }
-
-//////////////////////////////////////////////////////////////
-
-// var logvalue=JSON.parse(localStorage.getItem("logvalue")) || ""
-// if(logvalue=="yes"){
-//   "tab ho add recipe"
-//   "varna alert"
-// }

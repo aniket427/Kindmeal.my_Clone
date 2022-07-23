@@ -3,27 +3,62 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Share my Recipe | kindMeal.my</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/helpless-nation-9785/styles/navbar.css">
+        <link rel="stylesheet" href="./styles/navbar.css">
         <link rel="stylesheet" href="./styles/sharemyRecipe.css">
+        <style id="style"  > </style>  
     </head>
+ 
     <style>
     </style>
     <body>
-         <div id="navbar"></div>
+        <div id="navbar1">
+            <div> <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></div>
+        
+            <div>
+            <div><button class="btn"><img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt=""></button></div>
+            <div><button class="btn"><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></button></div>
+            <div><button class="btn"><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></button></div>
+            </div>
+            <div>
+                <div id="log">
+                    <p class="lg">Login</p>
+                    <button style="color:white ; background-color:#35619f;border:none;border-radius: 5px;padding: 5px 25px;
+                    font-weight: bold;"  class="fbb">Facebook</button>
+                    <button onclick="open_login_popup()" class="login_button" style="color:white ; background-color:#35619f;border:none;border-radius: 5px;padding: 5px 25px;
+                    font-weight: bold;color:white ; background-color:#666;border:none;border-radius: 5px;margin-left: 5px;" class="btn2">Email</button>
+                </div>
+              <p onclick="open_signup_popup()" class="signup_button">Sign Up</p>
+            </div>
+            </div>
+            <div id="navigation">
+                 <a href="index.html"><button class="btn3">Home</button></a>
+                 <a href=""><button class="btn3">Meal Deals</button></a>
+                 <a href="kindmoment.html"><button class="btn3">KindMoments</button></a>
+                 <a href=""><button class="btn3">Hot Picks</button></a>
+                 <a href="recipe.html"><button class="btn3" >Recipe</button></a>
+                 <a href="sharemyRecipe.html"><button class="btn3">Share Recipe</button></a>
+                 <a href="artical.html"><button class="btn3">Articles</button></a>
+                <a href="help.html"><button class="btn3">Help</button></a>
+                
+            </div>`;
 
        <div id="parentbox">
         <div id="leftbox">
             <div>
+          
                 <h3>Member Functions</h3>
-                <p><a href="https://www.kindmeal.my/member/index.php?action=coupons"></a>Manage My Coupons</p>
-                <p><a href="https://www.kindmeal.my/member/index.php?action=recipe"></a> Manage My Recipes</p>
-                <p><a href="https://www.kindmeal.my/vik3797"></a> My KindMeal Profile</p>
-                <p><a href="https://www.kindmeal.my/member/index.php?action=settings"></a> Update Profile</p>
-                <p><a href="https://www.kindmeal.my/member/index.php?action=settings"></a> Account Settings</p>
-                <p><a href="https://www.kindmeal.my/logout.php"></a> Logout</p>
+            <br>    
+                <p><a href="https://www.kindmeal.my/member/index.php?action=coupons">Manage My Coupons</a></p>
+                <p><a href="https://www.kindmeal.my/member/index.php?action=recipe">Manage My Recipes</a></p>
+            <br>
+                <p><a href="https://www.kindmeal.my">My KindMeal Profile</a></p>
+                <p><a href="https://www.kindmeal.my/member/index.php?action=settings">Update Profile</a></p>
+            <br>
+                <p><a href="https://www.kindmeal.my/member/index.php?action=settings">Account Settings</a> </p>
+                <p><a href="https://www.kindmeal.my/logout.php">Logout</a> </p>
             </div>
         </div>
         <div id="form">
@@ -33,9 +68,7 @@
             <h2>Recipe Details</h2>
             <table id="table">
                 <tr class="tr">
-                    <td style="color:gray;">
-                        Recipe Name 
-                    </td>
+                    <td>Recipe Name </td>
                     <td>
                         <input id="name" type="text">
                     </td>
@@ -138,7 +171,16 @@
         </div>
        </div>
         <button id="create_R">Create Recipe</button>
-        <div id="footer"></div>
+        <div id="foot"></div>
     </body>
 </html>
-<script src="/helpless-nation-9785/scripts/sharemyRecipe.js" type="module"></script>
+<script src="./scripts/sharemyRecipe.js" type="module"></script>
+<script src="./scripts/login_signup_poopups.js"></script>
+<script src="./scripts/login_signp_functionality.js"></script>
+<script type="module" >
+    import {signupfunc,loginfunc,css} from  "./scripts/exports.js"
+    sigup.innerHTML=signupfunc()
+    login.innerHTML=loginfunc()
+    document.querySelector("#style").innerHTML=css()
+</script>
+<script src="./scripts/index.js" type="module"></script>
