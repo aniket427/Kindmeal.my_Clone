@@ -399,6 +399,7 @@ function logout(){
     // if(check.checked){
     //     flag4=false
     // }
+    console.log(flag2)
      
     
     var gen=document.getElementsByName("gender")
@@ -416,9 +417,9 @@ function logout(){
     // else if(flag1){
     //     alert("email already existing")
     // }
-    // else if(flag2){
-    //     alert("username not available")
-    // }
+    else if(flag2){
+            alert("username taken by another user ")
+        }
     // else if(email!==remail){
     //     alert("please check your email id")
     // }

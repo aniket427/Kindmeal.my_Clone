@@ -21,14 +21,14 @@ function signupfunc(){
         </div>
     </div>
     <p class="foot_signup" onclick="open_login_popup()">Member Login</p>
-    <p class="foot_signup" style="left: 70%; top: 12px;" >Forgot password?</p>
+    <p class="foot_signup" style="left: 68%; top: -5px;" >Forgot password?</p>
 
  `   
 }
 
 function loginfunc(){
     return`
-    <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="" id="headimg">
+    <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="" id="headimg" style="margin-left:140px;">
     <button id="login_popup_cancel"  onclick="close_login_popup()" >✕</button>
     <div style="font-size: 28px; font-weight: 500; text-align: center;margin-top: 12px;">Member Login</div>
     <input type="text" name="" id="login_email" placeholder="Your Email" style="margin-top: 25px;">
@@ -63,8 +63,8 @@ function css(){
     return `
     .signup_popup{
         font-family: Roboto,arial;
-        width: 615px;
-        height: 690px;
+        width: 550px;
+        height: 600px;
         border: 1px solid;
         border-radius: 10px;
         position: absolute;
@@ -80,6 +80,7 @@ function css(){
     .right_menu{
         /* background-color: red; */
         position: absolute;
+        
        }
        .floater>a{
        background-color: white;
@@ -93,7 +94,7 @@ function css(){
        .menu_button{
        height: 50px;
        /* max-height: 60px; */
-       width: 150px;
+    //    width: 180px;
        margin-top: -10px;
        border: 0px;
     border-radius: 10px 10px 0px 0px;
@@ -110,7 +111,7 @@ function css(){
       }
     .login_popup{
         font-family: Roboto,arial;
-        width: 615px;
+        width: 620px;
         height: 560px;
         border: 1px solid;
         border-radius: 10px;
@@ -147,13 +148,13 @@ function css(){
     
 
     #headimg{
-        height: 89px;
+        height: 75px;
         margin-top: 40px;
-        margin-left: 17.2%;
+        margin-left: 14.3%;
     }
     #card{
         width: 89%;
-        height: 175px;
+        height: 150px;
         border: 1px solid;
         margin-left: 34px;
         border-radius: 20px;
@@ -161,7 +162,7 @@ function css(){
         display: flex;
     }
     #card>img{
-        height: 140px;
+        height: 110px;
         margin-top: 17px;
         margin-left: 20px;
 
@@ -176,12 +177,12 @@ function css(){
         font-size: 20px;
         font-weight: 600;
         position: relative;
-        top: 30px;
+        top: 20px;
     }
     .box>span:nth-child(2){
         position: relative;
-        /* font-size: 20px; */
-        top: 50px;
+         font-size: 14px; 
+        top: 35px;
         display: flex;
         flex-direction: column
         ;
@@ -191,7 +192,7 @@ function css(){
         color: grey;
         font-size: 20px;
         position: relative;
-        top: 35px;
+        top: 20px;
         left: 20px;
     }
     .foot_login{
@@ -216,8 +217,8 @@ function css(){
         background-color: white;
         border: 0px;
         position: relative;
-        left: 10%;
-        top: -17%;
+        left: 15%;
+        top: -13.5%;
         font-size: 18px;
         color: grey;
         font-weight: 800;
@@ -278,16 +279,19 @@ function css(){
         display: none;
         flex-direction: column;
         text-align: center;
-        // border: 1px solid;
-        width: 150px;
+    
+        width: 180px;
+      
     }
     
     .floater>a{
         text-align: center;
+        
         text-decoration:none;
         color: black;
+        width:180px;
         font-weight:500;
-        font-size:16px;
+        font-size:15px;
         padding-top: 15xp;
         padding-bottom: 15px;
     }
@@ -305,11 +309,14 @@ function css(){
         width: 150px;
     }
     .menu_button{
-        width: 150px;
+        width: 180px;
     }
     .main_float{
         // border: 1px solid ;
         width: 180px;
+    }
+    .signup_popup{
+        position:fixed;
     }
     `
 }
