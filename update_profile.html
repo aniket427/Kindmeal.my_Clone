@@ -182,7 +182,7 @@
             <p style="font-size:29px;margin-top: 25px;color: black;">
                 Update My Profile </p> 
             <button onclick="changepage()" id="vp" style="font-size:25px;margin-top: 18px;
-            margin-left: 310px;height: 40px;width: 220px;border-radius: 10px;border: 0px;font-weight: 50;"> View Profile</button>
+            margin-left: 210px;height: 40px;width: 220px;border-radius: 10px;border: 0px;font-weight: 50;"> View Profile</button>
            </div>        
            <p style="margin-top: 25px;">You can update your profile and login details here. Please fill in as much information as possible to ensure an accurate profile.</p>
            <p style="margin-top: 25px;margin-bottom: 55px;">To update your cover photo or headshot, please proceed to your Public Profile and click on the "Edit Cover Photo" or "Edit Headshot" button at lower right corner of cover photo.</p>
@@ -362,6 +362,7 @@ function logout(){
 
 
     function update(){
+        console.log("jhij")
     var form=document.querySelector("form");
     // var fname=document.getElementById("fname").value
     var username=form.username.value
@@ -381,18 +382,18 @@ function logout(){
 
     var sigdata=JSON.parse(localStorage.getItem("sigdata")) || []
     // var flag1=false;
-    // var flag2=false;
+    var flag2=false;
     var flag3=true;
     // var flag4=true;
-    // for(var i=0;i<sigdata.length;i++){
-    //     if(sigdata[i].email==email ){
-    //         console.log(sigdata[i].email)
-    //         flag1=true;
-    //     }
-    //     if(sigdata[i].username==username){
-    //         flag2=true;
-    //     }
-    // }
+    for(var i=0;i<sigdata.length;i++){
+        // if(sigdata[i].email==email ){
+            // console.log(sigdata[i].email)
+            // flag1=true;
+        // }
+        if(sigdata[i].username==username){
+            flag2=true;
+        }
+    }
   
     // var check=document.querySelector("#check")
     // if(check.checked){
@@ -421,6 +422,7 @@ function logout(){
     // else if(email!==remail){
     //     alert("please check your email id")
     // }
+    
     else if(flag3){
         alert("please select your gender")
     }

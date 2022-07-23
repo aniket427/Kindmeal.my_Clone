@@ -50,6 +50,7 @@
   #navigation {
     background-color: #2bb673;
     display: flex;
+    justify-content: space-around;
     padding: 0px 150px;
   }
   #navigation button {

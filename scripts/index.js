@@ -1,8 +1,8 @@
-import {navbar,footer} from '../components/navbar.js'
+import {footer} from '../components/navbar.js'
 
-const nav = document.getElementById('navbar')
-nav.innerHTML = navbar();
-const foot = document.getElementById('foot')
+// const nav = document.getElementById('navbar')
+// nav.innerHTML = navbar();
+let foot = document.getElementById('foot')
 foot.innerHTML = footer();
 
 
