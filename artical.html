@@ -4,15 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Articals | kindMeal.my</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Articals | kindMeal.my</title>
+        <link rel="shortcut icon" href="https://www.kindmeal.my/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./styles/navbar.css">
         <link rel="stylesheet" href="./styles/artical.css">
         <style id="style"  >  </style>
     </head>
-     <style>
-     </style>
     <body>
         <div id="navbar1">
             <div> <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></div>
@@ -33,17 +32,22 @@
               <p onclick="open_signup_popup()" class="signup_button">Sign Up</p>
             </div>
             </div>
-            <div id="navigation">
-                 <a href="index.html"><button class="btn3">Home</button></a>
-                 <a href=""><button class="btn3">Meal Deals</button></a>
-                 <a href="kindmoment.html"><button class="btn3">KindMoments</button></a>
-                 <a href=""><button class="btn3">Hot Picks</button></a>
-                 <a href="recipe.html"><button class="btn3" >Recipe</button></a>
-                 <a href="sharemyRecipe.html"><button class="btn3">Share Recipe</button></a>
-                 <a href="artical.html"><button class="btn3">Articles</button></a>
-                <a href="help.html"><button class="btn3">Help</button></a>
-                
-            </div>`;
+
+            <!-- navbar lower section start -->
+    
+        <div id="navigation">
+          <a href="index.html"><button class="btn3">Home</button></a>
+          <a href="meal.html"><button class="btn3">Meal Deals</button></a>
+          <a href="kindmoment.html"><button class="btn3">KindMoments</button></a>
+          <a href="Hotpicks.html"><button class="btn3">Hot Picks</button></a>
+          <a href="recipe.html"><button class="btn3" >Recipe</button></a>
+          <a href="sharemyRecipe.html"><button class="btn3">Share Recipe</button></a>
+          <a href="artical.html"><button class="btn3">Articles</button></a>
+         <a href="help.html"><button class="btn3">Help</button></a>
+       </div>
+         
+           <!-- navbar lower section End -->
+           
       <div id="firstbox" >
         <div>
             <h1>Yummy News, Articles & Videos</h1>
@@ -154,10 +158,7 @@
          </div>
       </div>
        <div id="foot"></div>
-    </body>
-</html>
-
-<script src="./scripts/articals.js" type="module"></script>
+       <script src="./scripts/articals.js" type="module"></script>
 <script src="./scripts/login_signup_poopups.js"></script>
 <script src="./scripts/login_signp_functionality.js"></script>
 <script type="module" >
@@ -167,3 +168,5 @@
     document.querySelector("#style").innerHTML=css()
 </script>
 <script src="./scripts/index.js" type="module"></script>
+    </body>
+</html>
