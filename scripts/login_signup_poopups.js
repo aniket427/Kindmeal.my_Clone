@@ -47,7 +47,7 @@ function logout(){
     var loggedin=false;
     alert("logout successful")
     console.log(loggedin)
-    location.reload()
+    location.href="index.html"
 }
 
 
