@@ -66,6 +66,7 @@ function mainlogin(){
          fbb.classList.add("popup_button_visibility")
          lg.classList.add("popup_button_visibility")
         main_float.classList.remove("popup_button_visibility")
+        location.reload()
         }
     }
     if(flag){
